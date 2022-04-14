@@ -1,0 +1,26 @@
+import java.util.*;
+
+public class SameSum {
+   public static void main(String[] args) {
+      // Variables
+      int[] list1;
+      int[] list2;
+      
+      final int ARRAY_SIZE = 10;
+      
+      // Prompting user for input and filling array
+      list1 = new int[ARRAY_SIZE];
+      list2 = new int[ARRAY_SIZE];
+      Scanner sc = new Scanner(System.in);
+      for (int i = 0; i < ARRAY_SIZE; i++) {
+         System.out.print("Enter an integer: ");
+         list1[i] = sc.nextInt();
+      }
+      
+      // Filling list2 with numbers
+      for (int j = 0; j < ARRAY_SIZE; j++) {
+         list2[j] = 25 - list1[j];
+         System.out.println("Corresponding integers: " + list2[j]);
+      }
+   }
+}
